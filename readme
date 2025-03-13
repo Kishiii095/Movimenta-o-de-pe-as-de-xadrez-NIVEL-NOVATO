@@ -1,0 +1,73 @@
+# Jogo de Movimento de Peças de Xadrez
+
+## Descrição
+Este programa simula o movimento de três peças de xadrez: **Torre**, **Bispo** e **Rainha**. O usuário pode selecionar uma dessas peças, escolher o número de casas a serem movidas e definir a direção do movimento. O programa realiza o movimento com base nas escolhas do usuário e exibe a informação no terminal. A movimentação pode ser feita em várias direções, incluindo as diagonais.
+
+O jogo continua rodando até que o usuário escolha sair digitando 'Q'.
+
+## Funcionalidades
+- O programa permite ao usuário escolher entre as seguintes peças:
+  - **Torre (T)**
+  - **Bispo (B)**
+  - **Rainha (R)**
+- O usuário deve indicar o número de casas que a peça deve se mover.
+- O programa oferece diferentes direções para as peças:
+  - **C** (Cima)
+  - **B** (Baixo)
+  - **E** (Esquerda)
+  - **D** (Direita)
+  - **Q** (Diagonal direita-cima)
+  - **A** (Diagonal direita-baixo)
+  - **Z** (Diagonal esquerda-cima)
+  - **W** (Diagonal esquerda-baixo)
+- O programa verifica se a direção escolhida é válida para cada peça, exibindo uma mensagem de erro caso contrário.
+- O programa roda até o usuário decidir sair digitando 'Q'.
+
+## Como Usar
+1. **Escolha uma peça**:
+   - O programa pede para o usuário escolher uma peça digitando a inicial: `T` para Torre, `B` para Bispo, `R` para Rainha, ou `Q` para sair.
+   
+2. **Movimento**:
+   - Após escolher a peça, o programa solicita ao usuário que informe o número de casas a serem movidas pela peça.
+
+3. **Direção**:
+   - O programa então solicita a direção do movimento com base nas opções listadas acima. O usuário pode mover a peça para cima, para baixo, para a esquerda, para a direita, ou nas diagonais.
+
+4. **Sair**:
+   - Para sair do programa, basta digitar `Q` quando solicitado a escolher uma peça.
+
+## Exemplo de Execução
+```
+Escolha uma peça (T para torre, B para bispo, R para rainha) ou 'Q' para sair: T
+Digite o movimento da peça (quantas casas você deseja andar): 3
+Escolha a direção para a peça:
+C para cima, B para baixo, E para esquerda, D para direita,
+Q para diagonal direita-cima, A para diagonal direita-baixo,
+Z para diagonal esquerda-cima, W para diagonal esquerda-baixo: C
+A torre andou 3 casas para cima.
+
+Escolha uma peça (T para torre, B para bispo, R para rainha) ou 'Q' para sair: B
+Digite o movimento da peça (quantas casas você deseja andar): 2
+Escolha a direção para a peça:
+C para cima, B para baixo, E para esquerda, D para direita,
+Q para diagonal direita-cima, A para diagonal direita-baixo,
+Z para diagonal esquerda-cima, W para diagonal esquerda-baixo: Q
+O bispo andou 2 casas na diagonal direita-cima.
+
+Escolha uma peça (T para torre, B para bispo, R para rainha) ou 'Q' para sair: Q
+Saindo do programa...
+```
+
+## Observações
+- O programa utiliza um loop infinito para permitir que o usuário continue a jogar até decidir sair.
+- Se uma peça ou direção inválida for escolhida, o programa avisa ao usuário.
+- O programa pode ser facilmente expandido para adicionar mais peças ou direções.
+
+## Tecnologias Utilizadas
+- **Linguagem:** C
+- **Biblioteca Padrão:** `stdio.h` para entrada e saída.
+
+## Licença
+Este código é de uso livre e pode ser modificado conforme as necessidades do usuário.
+
+--- 
